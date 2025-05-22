@@ -25,9 +25,9 @@ A computational framework for multi-class classification using machine learning 
 ./iGPU.sh medium
 python GXGB.py train.fits test.fits output.csv
 ```
+---
 
-
-### 2. XGBoost implementation with advanced preprocessing:
+### XGBoost implementation with advanced preprocessing:
 
 ```python
 # Basic usage
@@ -40,8 +40,9 @@ python GXGB.py train_data.fits test_data.fits predictions.csv
 - Auto-detection and multi-GPU utilisation
 - Early stopping with validation monitoring
 
+---
 
-### 3. GCN architecture with KNN graph construction:
+### GCN architecture with KNN graph construction:
 
 ```python
 # Train GNN classifier
@@ -53,6 +54,8 @@ python GNN.py train_data.fits test_data.fits gnn_predictions.csv
 - 2-layer GCN with dropout regularisation
 - Class-weighted loss, adaptive learning rate
 - Memory-efficient inference for large graphs
+
+---
 
 ### vis.py
 
@@ -66,7 +69,7 @@ plot_confidence_entropy(results_df, "predicted_class")
 ```
 
 
-
+---
 
 ### Input format
 FITS files with training labels in `best_class_name` column
